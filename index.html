@@ -51,21 +51,15 @@
                     <label class="form-label">Gender:</label>
                     <div class="form-check mx-4">
                         <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
-                        <label class="form-check-label" for="male">
-                            Male
-                        </label>
+                        <label class="form-check-label" for="male">Male</label>
                     </div>
                     <div class="form-check mx-4">
                         <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
-                        <label class="form-check-label" for="female">
-                            Female
-                        </label>
+                        <label class="form-check-label" for="female">Female</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gender" id="other" value="other" required>
-                        <label class="form-check-label" for="other">
-                            Other
-                        </label>
+                        <label class="form-check-label" for="other">Other</label>
                     </div>
                     <div class="invalid-feedback">Please select your gender.</div>
                 </div>
@@ -100,11 +94,12 @@
                             <div class="invalid-feedback">Please select Level Of Education</div>
                 
                             <label for="year" class="form-label">Year of passing:</label>
-                            <input style="border: 0.7px solid black;" type="number" placeholder="yyyy" min="1980" max="2025">
+                            <input style="border: 0.7px solid black;" type="number" placeholder="yyyy" min="1980" max="2025"  required>
                             <div class="invalid-feedback">Please select years between 1980 and 2025</div>
                 
                             <label for="affilation" class="form-label">Affilation/ Board:</label>
-                            <input style="border: 0.7px solid black;" type="text" placeholder="Enter Affilation or Board">
+                            <input style="border: 0.7px solid black;" type="text" placeholder="Enter Affilation or Board"  required>
+                            <div class="invalid-feedback">fill board</div>
                         </div>
                     </div>
                 </div>

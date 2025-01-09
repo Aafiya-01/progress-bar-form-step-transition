@@ -5,7 +5,7 @@ const formSteps = document.querySelectorAll('.form-step');
 let currentStep = 0;
 
 function updateProgressBar() {
-  const progress = (currentStep / (formSteps.length - 1)) * 100;
+  const progress = (currentStep / (formSteps.length )) * 100;
   progressBar.style.width = progress + '%';
   progressBar.textContent = Math.round(progress) + '%';
 }
@@ -125,7 +125,7 @@ updateProgressBar();
           } else {
               event.preventDefault();
 
-              // Input values from Basic Information and Personal Details sections
+              // Input values 
               const firstName = document.getElementById('firstName').value;
               const lastName = document.getElementById('lastName').value;
               const phone = document.getElementById('phone').value;
@@ -134,7 +134,7 @@ updateProgressBar();
               const gender = document.querySelector('input[name="gender"]:checked').value;
               const dob = document.getElementById('dob').value;
 
-              // Collecting Education Details
+              // input for Education Details
               const educationContainer = document.getElementById('educationContainer');
               const educationItems = educationContainer.querySelectorAll('.education-item');
               const educationDetails = [];
@@ -167,8 +167,8 @@ updateProgressBar();
                   <h3>Education Details</h3>
                   ${educationDetails
                       .map(
-                          (edu, idx) => `
-                      <p><strong>Education ${idx + 1}:</strong></p>
+                          (edu, index) => `
+                      <p><strong>Education ${index + 1}:</strong></p>
                       <p>Level: ${edu.level}</p>
                       <p>Year of Passing: ${edu.year}</p>
                       <p>Affiliation/Board: ${edu.affiliation}</p>
